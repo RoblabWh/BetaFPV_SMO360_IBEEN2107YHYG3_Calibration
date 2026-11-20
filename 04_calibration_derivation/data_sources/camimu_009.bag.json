@@ -1,0 +1,38 @@
+{
+  "bag": "/run/media/niklas/EDDF-B044/basalt_calib/camimu_009.bag",
+  "t_shift_s": 10.0,
+  "gap_s": 10.0,
+  "width": 2880,
+  "height": 2880,
+  "encoding": "mono8",
+  "every": 3,
+  "compression": "none",
+  "pairs": 1665,
+  "fps_nominal": 9.990009990009991,
+  "topics": {
+    "cam0": "/cam0/image_raw",
+    "cam1": "/cam1/image_raw"
+  },
+  "recordings": [
+    {
+      "rec": "VID_20240618_170515_009",
+      "pairs": 1665,
+      "first_stamp_ns": 10000000000,
+      "last_stamp_ns": 176566400000,
+      "stamp_minus_pts_s": 10.0,
+      "imu_samples": 84200,
+      "cams": {
+        "cam0": {
+          "lens": "10",
+          "file": "VID_20240618_170515_10_009.insv",
+          "pts_frames": 4993
+        },
+        "cam1": {
+          "lens": "00",
+          "file": "VID_20240618_170515_00_009.insv",
+          "pts_frames": 4994
+        }
+      }
+    }
+  ]
+}

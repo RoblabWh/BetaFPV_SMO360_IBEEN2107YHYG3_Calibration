@@ -1,0 +1,21 @@
+cam0:
+  camera_model: pinhole
+  intrinsics: [852.318865, 853.435966, 1431.863641, 1438.369940]
+  distortion_model: equidistant
+  distortion_coeffs: [0.031061951, 0.015687572, -0.014509575, 0.001891756]
+  resolution: [2880, 2880]
+  image_topic: /cam0/image_raw
+  tag_topic: /cam0/tags
+  tag_detector: umich
+  rig_body: rig
+
+cam1:
+  camera_model: pinhole
+  intrinsics: [854.020069, 855.163074, 1441.165724, 1432.635816]
+  distortion_model: equidistant
+  distortion_coeffs: [0.028786005, 0.016339129, -0.014530352, 0.001882817]
+  resolution: [2880, 2880]
+  image_topic: /cam1/image_raw
+  tag_topic: /cam1/tags
+  tag_detector: umich
+  rig_body: rig

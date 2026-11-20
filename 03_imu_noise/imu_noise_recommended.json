@@ -1,0 +1,12 @@
+{
+  "source": "VID_20240618_170515_00_007.insv, static, 30 s .. 1801 s (warm-up done after ~900 s)",
+  "units": "continuous-time: noise in rad/s/sqrt(Hz), m/s^2/sqrt(Hz); bias random walk in rad/s^2/sqrt(Hz), m/s^3/sqrt(Hz)",
+  "method": "Allan deviation read at tau = 1 s (above the 17.3 Hz vibration line) and cross-checked with the PSD floor 5-50 Hz; bias random walk from the rising tail of the post-warm-up curves (rough, 15 min of data)",
+  "measured": {
+    "gyro_noise_std": [6.0e-05, 5.5e-05, 6.2e-05],
+    "accel_noise_std": [3.8e-04, 4.0e-04, 3.6e-04],
+    "gyro_bias_std": [2.0e-05, 2.0e-05, 2.0e-05],
+    "accel_bias_std": [1.0e-04, 1.0e-04, 1.0e-04]
+  },
+  "note": "Static values. For VIO in flight use the in-flight noise (gyro ~3.5e-3, accel ~6e-2, see insv_imu_viz/vio/README.md) or at least inflate these ~10x."
+}

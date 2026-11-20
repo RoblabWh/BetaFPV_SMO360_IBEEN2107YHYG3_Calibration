@@ -1,0 +1,21 @@
+{
+  "bag": "../vio_work/rs_calib_012/cam0_10_1440.bag",
+  "video": "/run/media/niklas/6463-3561/DCIM/Camera01/VID_20240618_170518_10_012.insv",
+  "topic": "/cam/image_raw",
+  "width": 1440,
+  "height": 1440,
+  "native": [
+    2880,
+    2880
+  ],
+  "scale": 0.5,
+  "t_shift_s": 10.0,
+  "window_pts_s": [
+    0.0,
+    123.0
+  ],
+  "frames": 3687,
+  "first_stamp_ns": 10000000000,
+  "last_stamp_ns": 132989533000,
+  "fps": 29.970030051256476
+}

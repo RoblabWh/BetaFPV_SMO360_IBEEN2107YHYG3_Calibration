@@ -1,0 +1,56 @@
+{
+  "bag": "/run/media/niklas/EDDF-B044/basalt_calib/calib_001+006_stereo.bag",
+  "t_shift_s": 10.0,
+  "gap_s": 10.0,
+  "width": 2880,
+  "height": 2880,
+  "encoding": "mono8",
+  "every": 6,
+  "compression": "none",
+  "pairs": 2622,
+  "fps_nominal": 4.9950049884957135,
+  "topics": {
+    "cam0": "/cam0/image_raw",
+    "cam1": "/cam1/image_raw"
+  },
+  "recordings": [
+    {
+      "rec": "VID_20240618_170511_001",
+      "pairs": 1278,
+      "first_stamp_ns": 10000000000,
+      "last_stamp_ns": 265655400000,
+      "stamp_minus_pts_s": 10.0,
+      "cams": {
+        "cam0": {
+          "lens": "10",
+          "file": "VID_20240618_170511_10_001.insv",
+          "pts_frames": 7667
+        },
+        "cam1": {
+          "lens": "00",
+          "file": "VID_20240618_170511_00_001.insv",
+          "pts_frames": 7668
+        }
+      }
+    },
+    {
+      "rec": "VID_20240618_170517_006",
+      "pairs": 1344,
+      "first_stamp_ns": 275788867000,
+      "last_stamp_ns": 544657467000,
+      "stamp_minus_pts_s": 275.788867,
+      "cams": {
+        "cam0": {
+          "lens": "10",
+          "file": "VID_20240618_170517_10_006.insv",
+          "pts_frames": 8065
+        },
+        "cam1": {
+          "lens": "00",
+          "file": "VID_20240618_170517_00_006.insv",
+          "pts_frames": 8065
+        }
+      }
+    }
+  ]
+}

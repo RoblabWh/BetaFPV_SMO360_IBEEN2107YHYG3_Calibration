@@ -1,0 +1,26 @@
+{
+    "camera": "BetaFPV SMO 360, serial IBEEN2107YHYG3 (same unit as betafpv_smo_360_calibration.json)",
+    "source": "Kalibr rolling-shutter calibration (vio_work/rs_calib_012, runs c0_full_fixed and c1_full_fixed): AprilGrid 6x6, frames at 1440 px, intrinsics fixed to the Basalt calibration; readout scaled to the native 2880 rows",
+    "lenses": [
+        {
+            "lens": "cam0",
+            "file": "_10_",
+            "shutter": "ROLLING_TOP_TO_BOTTOM",
+            "readout_s": 0.022181460883330132,
+            "line_delay_s": 7.701896140045184e-06,
+            "rows": 2880,
+            "frames": 3687,
+            "reprojection_rmse_px_at_1440": 0.5734
+        },
+        {
+            "lens": "cam1",
+            "file": "_00_",
+            "shutter": "ROLLING_TOP_TO_BOTTOM",
+            "readout_s": 0.02222252992903425,
+            "line_delay_s": 7.716156225359115e-06,
+            "rows": 2880,
+            "frames": 3613,
+            "reprojection_rmse_px_at_1440": 0.7695
+        }
+    ]
+}

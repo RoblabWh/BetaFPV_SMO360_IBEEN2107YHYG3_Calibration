@@ -1,0 +1,32 @@
+%YAML:1.0
+# from ../betafpv_smo_360_calibration/betafpv_smo_360_calibration.json
+
+cam0:
+  T_imu_cam: # R_CtoI, p_CinI (Basalt calibration)
+    - [0.007128418, -0.000880459, 0.999974205, 0.027363890]
+    - [0.999936240, 0.008764439, -0.007120430, 0.011257764]
+    - [-0.008757944, 0.999961204, 0.000942879, -0.025674974]
+    - [0.000000000, 0.000000000, 0.000000000, 1.000000000]
+  cam_overlaps: []
+  camera_model: pinhole
+  distortion_coeffs: [0.031061951, 0.015687572, -0.014509575, 0.001891756]
+  distortion_model: equidistant
+  intrinsics: [284.106288, 284.478655, 476.954547, 479.123313]
+  resolution: [960, 960]
+  rostopic: /cam0/image_raw
+  timeshift_cam_imu: -0.009516
+
+cam1:
+  T_imu_cam: # R_CtoI, p_CinI (Basalt calibration)
+    - [-0.005108737, -0.003215806, -0.999981780, -0.009510212]
+    - [-0.999954607, 0.008059195, 0.005082681, 0.009245928]
+    - [0.008042704, 0.999962353, -0.003256832, -0.015911048]
+    - [0.000000000, 0.000000000, 0.000000000, 1.000000000]
+  cam_overlaps: []
+  camera_model: pinhole
+  distortion_coeffs: [0.028786005, 0.016339129, -0.014530352, 0.001882817]
+  distortion_model: equidistant
+  intrinsics: [284.673356, 285.054358, 480.055241, 477.211939]
+  resolution: [960, 960]
+  rostopic: /cam1/image_raw
+  timeshift_cam_imu: -0.009516
