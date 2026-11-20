@@ -8,5 +8,5 @@
     "gyro_bias_std": [2.0e-05, 2.0e-05, 2.0e-05],
     "accel_bias_std": [1.0e-04, 1.0e-04, 1.0e-04]
   },
-  "note": "Static values. For VIO in flight use the in-flight noise (gyro ~3.5e-3, accel ~6e-2, see insv_imu_viz/vio/README.md) or at least inflate these ~10x."
+  "note": "Static values. For VIO in flight use the in-flight noise (gyro ~3.5e-3, accel ~6e-2; estimated from the vibration spectrum of a flight recording, not calibrated) or at least inflate these ~10x."
 }

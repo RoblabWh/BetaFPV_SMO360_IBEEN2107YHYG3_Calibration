@@ -51,7 +51,9 @@ IMU TDK ICM-20948 at 500 Hz, two fisheye lenses, 2880x2880 each.
   * **Handheld or vibration-free:** use the JSON values × 5 (`derived/openvins_960px/kalibr_imu_chain_handheld.yaml`).
     This is the validated setting: OpenVINS scale is within 4.3 % of the tag ground truth.
   * **Flight with propellers:** vibration makes the noise ~25× static (gyro ~3.5e-3, accel ~6e-2;
-    `kalibr_imu_chain_flight.yaml`, see `insv_imu_viz/vio/README.md`).
+    `kalibr_imu_chain_flight.yaml`, see `insv_imu_viz/vio/README.md`). Not a calibration: there is no measurement at
+    rest in flight. The values were estimated from the vibration spectrum (Welch, 5–30 Hz) of the IMU in an ordinary
+    flight recording (`VID_20240320_184240`) and are only confirmed by OpenVINS running stably on flights.
   * **Never use the flight values on vibration-free data:** they make the IMU nearly useless for scale. On the handheld
     tag recording, the scale was then 69 % off.
 * **The biases are temperature dependent and only a starting value.** During the first ~10-15 min of recording the gyro-y bias

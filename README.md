@@ -47,7 +47,12 @@ with matching names (`<name>_mask.png`, `<name>_rolling_shutter.json`).
 
 1. **Pick the IMU noise to match the recording.** The values in the calibration are static values (Allan deviation) and too optimistic:
    * **Handheld (no vibration):** static values × 5 (`02_configs/openvins_960px/kalibr_imu_chain_handheld.yaml`).
-   * **Flight with propellers:** vibration makes the noise ~25 × larger (`kalibr_imu_chain_flight.yaml`).
+   * **Flight with propellers:** vibration makes the noise much larger (`kalibr_imu_chain_flight.yaml`, ~25 × static).
+     These flight values are **not a calibration**: an Allan analysis needs the camera at rest, and none was done in
+     flight. They were estimated from the vibration spectrum (Welch, 5–30 Hz) of the IMU in an ordinary flight
+     recording (`VID_20240320_184240`) and are only confirmed by OpenVINS running stably on flights.
+   * **Basalt (both lenses), handheld:** static × 5 is unstable in Basalt. Accel 0.015 / gyro 0.0009 (tuned on the tag
+     recording 010) gave a scale error of −5.7 %; the flight values gave −15 %.
    * **Never use the flight values on handheld recordings:** the IMU becomes almost useless for scale (scale error +69 % instead of +4 %).
 2. **Mask out the lens edge.** Beyond ~80° from the image centre the reprojection error grows. Mask below 90° for VIO
    and TagSLAM (VIO: 70–85°); use the lens mask for splat training.

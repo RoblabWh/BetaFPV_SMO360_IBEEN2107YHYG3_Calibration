@@ -19,8 +19,8 @@ calibration, with extrinsics and time offset fixed and dynamic init.
 
 * **The VIO chain itself is fine.** With an IMU noise model that matches the recording, OpenVINS is within 4 % of the
   tag ground truth in scale, and 0.23 m ATE over 41 m.
-* **A noise model much too large for the data ruins the scale.** The in-flight values (25× static, needed for the
-  prop vibration in flight) let the IMU constrain almost nothing on a vibration-free handheld walk, so the scale
+* **A noise model much too large for the data ruins the scale.** The in-flight values (~25× static, estimated from the
+  vibration spectrum of a flight recording, not calibrated) let the IMU constrain almost nothing on a vibration-free handheld walk, so the scale
   drifts (69 %).
 * **The "~1.37" from the plan is not a VIO result.** It is 1/0.727, the accelerometer scale of the first, rejected
   `basalt_calibrate_vi` run (`opt_imu_scale`, gravity free). The final calibration has the accelerometer scale fixed
